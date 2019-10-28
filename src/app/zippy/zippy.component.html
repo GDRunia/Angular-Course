@@ -1,0 +1,14 @@
+
+<div class="zippy">
+    <div class="zippy-heading"
+        [class.expanded]="expanded"
+        (click)="toggle()"
+        >
+        {{ title }}
+        <i *ngIf="!expanded" class="material-icons">expand_more</i>
+        <i *ngIf="expanded" class="material-icons">expand_less</i>
+    </div>
+    <div *ngIf="expanded" class="zippy-body">
+        <ng-content></ng-content>
+    </div>
+</div>

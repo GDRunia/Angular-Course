@@ -1,0 +1,9 @@
+<h1>test</h1>
+
+<button
+    type="button"
+    class="btn"
+    [class.btn-primary]="isActive"
+    [class.btn-warning]="!isActive"
+    (click)="clickIcon()"
+></button>
